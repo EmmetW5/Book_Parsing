@@ -92,12 +92,6 @@ def compare_str_fuzz(str1, str2):
     success = similarity > threshold
     return success
 
-# Use rapidfuzz to check for a substring within a string
-def fuzz_substring(substring, string):
-    threshold = 90
-    similarity = rapidfuzz.fuzz.partial_ratio(substring, string)
-    success = similarity > threshold
-    return success
    
 # Parse the text into companies and write them to an excel sheet
 # Keep track of: year, and what section it is in: olefin fiber, textile glass, or mixed.
