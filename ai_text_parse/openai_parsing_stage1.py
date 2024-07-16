@@ -1,5 +1,4 @@
 from openai import OpenAI
-import rapidfuzz
 from progress.bar import Bar
 import os
 
@@ -93,20 +92,23 @@ def open_file(file_path):
 
 # Writes the text to a file in the output folder, if the folder is not found it will create it
 def write_output(text, file_name):
+    # Create the output directory and file name
     directory = "output_stage1"
     file_name.replace(".txt", "")
     file_name = "output_" + file_name + "_" + cur_model + ".txt"
     print(f"{directory}/{file_name}")
 
+    # Make the folder if it does not exist
     if not os.path.exists(directory):
         os.makedirs(directory)
-    with open(os.path.join(directory, file_name), 'w') as file:
-        try:
-            with open(file_path, 'w') as file:
-                file.write(text)
-        except FileNotFoundError:
-            print(f"The file {file_path} was not found.")
-            quit()
+    # Write to the file
+    try:
+        with open( os.path.join(directory, file_name), 'w') as file:
+            print(text)
+            file.write(text)
+    except FileNotFoundError:
+        print(f"The file {file_path} was not found.")
+        quit()
 
 
 # Parses the text and returns the parsed text
@@ -116,7 +118,7 @@ def process_text(text):
     parsed_text = ""
 
     # Creates a progress bar to show the progress of the parsing
-    total_iterations = len(text)
+    total_iterations = 2
     bar = Bar('Processing', max=total_iterations)
 
     # Parse each section of the text
@@ -124,7 +126,7 @@ def process_text(text):
         parsed_text += openai_parse(text[i]) + "\n\n"
         bar.next()
     bar.finish()
-
+    print(parsed_text)
     return parsed_text
 
 
@@ -144,6 +146,7 @@ text = open_file(absolute_file_path_input)
 
 # Process the text
 processed_text = process_text(text)
+print(processed_text)
 
 # Write the processed text to a file
 print("\nParsing complete. Writing to file: ")

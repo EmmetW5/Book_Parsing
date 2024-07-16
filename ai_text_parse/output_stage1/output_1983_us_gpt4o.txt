@@ -117,13 +117,11 @@ U.S. MAN-MADE FIBER PRODUCERS
 <Plant Location> Spirit Lake, IA
 <Additional Fibers> monofil
 
-```
 <Company Name> CAMAC CORPORATION
 <Executive Office> P.O. Box 1004, Bristol, VA 24203
 <Fiber> Nylon 6
 <Plant Location> Bristol, VA
 <Additional Fibers> Camalon (yarn)
-```
 
 <Company Name> CELANESE FIBERS OPERATIONS
 <Division> A DIVISION OF CELANESE CORPORATION
@@ -146,7 +144,6 @@ U.S. MAN-MADE FIBER PRODUCERS
 <Plant Location> Cortland, NY
 <Additional Fibers> monofil - captive
 
-```
 <Company Name> COURTAULDS NORTH AMERICA INC.
 <Executive Office> 104 West 40th St., New York, NY 10018
 <Regional Sales> P.O. Box 2648, Mobile, AL 36652
@@ -156,7 +153,6 @@ U.S. MAN-MADE FIBER PRODUCERS
 <Fiber> Nylon 6
 <Plant Location> Le Moyne
 <Additional Fibers> Courtaulds, Shareen
-```
 
 <Company Name> E. I. DU PONT DE NEMOURS & COMPANY (INC.)
 <Division> TEXTILE FIBERS DEPARTMENT
@@ -237,7 +233,6 @@ U.S. MAN-MADE FIBER PRODUCERS
 <Additional Fibers> Cleerspan, DC-100 DC-700
 <Additional Fibers> Glospan (fused multifil)
 
-```
 <Company Name> THE GOODYEAR TIRE & RUBBER COMPANY
 <Division> CHEMICAL DIVISION
 <Executive Office> Akron, OH 44316
@@ -245,7 +240,6 @@ U.S. MAN-MADE FIBER PRODUCERS
 <Plant Location> Scottsboro, AL
 <Plant Location> Point Pleasant, WV
 <Additional Fibers> yam - captive
-```
 
 <Company Name> GUILFORD MILLS
 <Division> GAINESVILLE DIVISION
@@ -275,14 +269,12 @@ U.S. MAN-MADE FIBER PRODUCERS
 <Plant Location> Williston
 <Additional Fibers> monofil
 
-```
 <Company Name> KAYSER-ROTH CORPORATION
 <Division> YARN PROCESSING DIVISION
 <Executive Office> 2303 W. Meadowview Rd., Greensboro, NC 27407
 <Fiber> Nylon 66
 <Plant Location> Creedmoor, NC
 <Additional Fibers> yarn - captive
-```
 
 <Company Name> MONOFILAMENTS, INC.
 <Executive Office> 1401 Hopeman Pkwy., Waynesboro, VA 22980
@@ -733,7 +725,7 @@ In addition to the above company listings, the following companies are known to 
 
 The following companies are also producing a variety of textile products from olefin: Conwed Corp. Conwed Plastic Netting (P embossed film for netting); E.I. du Pont de Nemours & Company (Inc.) (E & P embossed film for netting); Hercules Incorporated, Polymers Division De/net (E embossed film for netting); Nalle Inc. (P embossed film for netting); Riegel Products Corporation Polyweb (P meltblown); and The 3M Company (P spunbonded).
 
-<Company Name> TEXTILE GLASS FIBER
+TEXTILE GLASS FIBER
 
 <Company Name> CERTAINTEED CORPORATION
 <Division> FIBER GLASS REINFORCEMENTS DIVISION
