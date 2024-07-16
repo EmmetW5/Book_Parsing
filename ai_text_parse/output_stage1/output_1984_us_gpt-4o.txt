@@ -118,7 +118,6 @@
 <Plant Location> Bristol, VA
 <Additional Fibers> Gama/on (yarn)
 
-```plaintext
 <Company Name> CELANESE FIBERS OPERATIONS
 <Division> A DIVISION OF CELANESE CORPORATION
 <Executive Office> P.O. Box 32414, Charlotte, NC 28232
@@ -141,7 +140,6 @@
 <Plant Location> Rock Hill
 <Additional Fibers> Arnet (yarn, staple & tow)
 <Notes> MARKETER: Celanese Fibers Operations, Marketing, 1211 Avenue of the Americas, New York, NY 10036
-```
 
 <Company Name> CORTLAND LINE COMPANY
 <Executive Office> 67 E. Court St., P.O. Box 1362, Cortland, NY 13045
@@ -644,16 +642,12 @@ page 199
 <Regional Sales> Northeastern Industrial Park, Guilderland Center, NY 12505
 <Plant Location> Guilderland Center, NY (E film-captive)
 
-The input "page 200" does not appear to be a company description. Here it is returned as is:
+PAGE 200
 
-page 200
-
-```
 <Company Name> MIRAFI INC.
 <Notes> Subsidiary of Dominion Textiles
 <Executive Office> P.O. Box 240967, Charlotte, NC 28224
 <Plant Location> Moultrie, GA (P film-captive)
-```
 
 <Company Name> NSL, INC.
 <Executive Office> Box 658, Soperton, GA 30457
@@ -673,12 +667,10 @@ page 200
 <Additional Fibers> Marvess (P yarn, staple & tow)
 <Notes> The company also manufactures Duon, Petromat, Rutan and Supac nonwoven fabrics at Seneca, SC.
 
-```plaintext
 <Company Name> POLYLOOM CORP OF AMERICA
 <Executive Office> 1615 N. Broadway, P.O. Box 289, Dayton, TN 37321
 <Plant Location> Dayton, TN
 <Additional Fibers> Polyloom (P split film)
-```
 
 <Company Name> SARLON INDUSTRIES, INC.
 <Executive Office> 775 N.W. 71st Street, Miami, FL 33150
@@ -800,13 +792,11 @@ The following companies are also producing a variety of textile products from ol
 <Plant Location> Etowah, TN
 <Additional Fibers> Chop-Pak (mat, chopped strand and staple yarn & sliver)
 
-```
 <Company Name> NICOFIBERS INC.
 <Executive Office> Iron point Rd., Shawnee, OH 43782
 <Plant Location> Shawnee, OH
 <Additional Fibers> Conformat, Consurmat, Surmat
 <Notes> Textile Organon November 1984
-```
 
 <Company Name> OWENS-CORNING FIBERGLAS CORPORATION
 <Executive Office> Fiberglas Tower, Toledo, OH 43659
