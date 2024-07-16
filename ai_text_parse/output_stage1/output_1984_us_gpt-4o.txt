@@ -1,0 +1,13 @@
+1984
+
+<Company Name> ALBANY INTERNATIONAL-MONOFILAMENT PLANT
+<Executive Office> 156 s. Main Street, Homer, NY 13077
+<Fiber> Fluoro
+<Plant Location> Homer, NY
+<Additional Fibers> Hatar, Kynar, Teflon, Tefzel
+<Fiber> Nylon 6, 66, & 612
+<Fiber> Polyester
+<Plant Location> Homer
+<Plant Location> Homer
+<Additional Fibers> regular & hydrolysis-resistant
+

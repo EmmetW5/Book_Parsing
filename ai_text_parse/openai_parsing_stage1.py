@@ -94,7 +94,7 @@ def open_file(file_path):
 def write_output(text, file_name):
     # Create the output directory and file name
     directory = "output_stage1"
-    file_name.replace(".txt", "")
+    file_name = file_name.replace(".txt", "")
     file_name = "output_" + file_name + "_" + cur_model + ".txt"
     print(f"{directory}/{file_name}")
 
@@ -118,7 +118,7 @@ def process_text(text):
     parsed_text = ""
 
     # Creates a progress bar to show the progress of the parsing
-    total_iterations = 2
+    total_iterations = len(text)
     bar = Bar('Processing', max=total_iterations)
 
     # Parse each section of the text
