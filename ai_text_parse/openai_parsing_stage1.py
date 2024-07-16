@@ -44,6 +44,7 @@ my_prompt = f"""
         <Additional Fibers> regular & hydrolysis-resistant
     """
 
+cur_model = "gpt-4o"
 
 def openai_parse(text):
     
@@ -51,7 +52,7 @@ def openai_parse(text):
     # Emmet's personal API key, should probably get a more secure method of storing this
     client = OpenAI(
 
-        api_key = read_from_file("OPENAI_KEY.txt")
+        api_key = open_file("OPENAI_KEY.txt")
 
     )
 
@@ -60,7 +61,7 @@ def openai_parse(text):
         # only real downside is the cost - currently costs roughly $0.04 per program run
         
         #model="gpt-3.5-turbo",
-        model="gpt-4o",
+        model = cur_model,
 
         # prompt for the model, basically the "instructions" for the model
         # and the text as input
@@ -78,46 +79,11 @@ def openai_parse(text):
  
 
 
-# Reads a file and returns the contents as a string
-def read_from_file(file_name):
-    with open(file_name, 'r') as f:
-        return f.read()
 
-
-# A more robust way to compare strings given OCR errors. Uses rapidfuzz to compare strings
-def compare_str_fuzz(str1, str2):
-    threshold = 80
-    similarity = rapidfuzz.fuzz.ratio(str1, str2)
-    success = similarity > threshold
-    return success
-
-
-def open_file():
-    # Get the folder name and file name from the user
-    folder_name = input("Enter the folder name for input: ")
-    file_name = input("Enter the file name: ")
-
-    # Construct the full path
-    file_path = os.path.join(folder_name, file_name)
-
-
-    print(f"Constructed file path: {file_path}")
-
-    # Check the current working directory
-    current_working_directory = os.getcwd()
-    print(f"Current working directory: {current_working_directory}")
-
-    # Combine the current working directory with the constructed path to get an absolute path
-    absolute_file_path = os.path.join(current_working_directory, file_path)
-
-    # Print the absolute file path for debugging
-    print(f"Absolute file path: {absolute_file_path}")
-
-
-
-    # Now you can use file_path to open the file
+# Opens file for reading and returns the contents as a string
+def open_file(file_path):
     try:
-        with open(absolute_file_path, 'r') as file:
+        with open(file_path, 'r') as file:
             content = file.read()
             return content
     except FileNotFoundError:
@@ -125,37 +91,60 @@ def open_file():
         quit()
 
 
+# Writes the text to a file in the output folder, if the folder is not found it will create it
+def write_output(text, file_name):
+    directory = "output_stage1"
+    file_name.replace(".txt", "")
+    file_name = "output_" + file_name + "_" + cur_model + ".txt"
+    print(f"{directory}/{file_name}")
 
-def write_to_file(text):
-    folder_name = input("Enter the folder name for output: ")
-    file_name = input("Enter the file name: ")
-    file_path = os.path.join(folder_name, file_name)
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+    with open(os.path.join(directory, file_name), 'w') as file:
+        try:
+            with open(file_path, 'w') as file:
+                file.write(text)
+        except FileNotFoundError:
+            print(f"The file {file_path} was not found.")
+            quit()
 
-    try:
-        with open(file_path, 'w') as file:
-            file.write(text)
-    except FileNotFoundError:
-        print(f"The file {file_path} was not found.")
+
+# Parses the text and returns the parsed text
+def process_text(text):
+    # split text by every blank line
+    text = text.split("\n\n")
+    parsed_text = ""
+
+    # Creates a progress bar to show the progress of the parsing
+    total_iterations = len(text)
+    bar = Bar('Processing', max=total_iterations)
+
+    # Parse each section of the text
+    for i in range(total_iterations):
+        parsed_text += openai_parse(text[i]) + "\n\n"
+        bar.next()
+    bar.finish()
+
+    return parsed_text
+
 
 # "Main"
 
+# Get the folder name and file name from the user
+folder_name = input("Enter the folder name for input: ")
+file_name = input("Enter the file name: ")
+file_path = os.path.join(folder_name, file_name)
+current_working_directory = os.getcwd()
 
-# Get the input file from the user
-text = open_file()
+# Combine the current working directory with the constructed path to get an absolute path
+absolute_file_path_input = os.path.join(current_working_directory, file_path)
 
-# split text by every blank line
-text = text.split("\n\n")
-parsed_text = ""
+# Open the file and read the contents into text
+text = open_file(absolute_file_path_input)
 
-# Creates a progress bar to show the progress of the parsing
-total_iterations = len(text)
-bar = Bar('Processing', max=total_iterations)
+# Process the text
+processed_text = process_text(text)
 
-# Parse each section of the text
-for i in range(total_iterations):
-    parsed_text += openai_parse(text[i]) + "\n\n"
-    bar.next()
-bar.finish()
-
-print("\nParsing complete. Writing to file...")
-write_to_file(parsed_text)
+# Write the processed text to a file
+print("\nParsing complete. Writing to file: ")
+write_output(processed_text, file_name)
