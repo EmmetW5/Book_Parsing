@@ -44,19 +44,19 @@ class Company:
 
     def write_to_excel(self, sheet):
         # The format of the excel sheet is as follows:
-        # [year, name, fibers, additional fibers, combined fibers (NA?), exec office, plant locations, sales office, regional sales office, R&D/Lab, sales rep, trademark, notes, page #]
+        # [year, name, fibers, NA, additional fibers, combined fibers, exec office, plant locations, NA, sales office, regional sales office, R&D/Lab, sales rep, trademark, notes, page #]
         
         # Convert lists to strings to be inserted into the excel sheet
         list_regional_sales_offices = '; '.join(self.regional_sales_offices)
         list_sales_office = '; '.join(self.sales_office)
         list_fibers = '; '.join(self.fibers)
-        list_plant_locations = '& '.join(self.plant_locations)
+        list_plant_locations = ' & '.join(self.plant_locations)
         list_additional_fibers = '; '.join(self.additional_fibers)
         
         # Write to the excel sheet
         if(debug): print(f"Writing {self.name} to excel sheet")
         sheet.append([self.year, self.name, list_fibers, None, list_additional_fibers, self.exec_office, list_plant_locations, 
-                      list_regional_sales_offices, list_sales_office, None, None, None, self.notes, None])
+                      None, list_sales_office, list_regional_sales_offices, None, None, None, self.notes, None])
         
 
     # Print the company object

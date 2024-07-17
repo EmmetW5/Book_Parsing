@@ -12,6 +12,7 @@ my_prompt = f"""
     <Company Name> the name of the company, will be in all caps
     <Executive Office> the address of the executive office, the address will follow "EXECUTIVE OFFICE: " text
     <Regional Sales> the addresses of regional sales offices of the company. They will follow "REGIONAL SALES: " text, and can have many entries
+    <Sales Office> the address of the sales office, will follow "SALES OFFICE: " text
     <Fiber> the fibers the company produces. They will follow after the last regional sales office, and can have many entries. 
     <Plant Location> After each fiber, there will be a list of locations where they are produced. There can be more than one location for each fiber.
     <Additional Fibers> For a given fiber, there is usually a list of additional fiber names following the plant location.
