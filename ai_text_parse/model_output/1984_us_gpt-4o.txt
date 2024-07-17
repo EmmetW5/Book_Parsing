@@ -291,7 +291,7 @@ PAGE 197
 <Plant Location> Pensacola, FL & Greenwood, SC
 <Additional Fibers> Ultron (yarn, monofil & staple), Cerex (spunbonded)
 
-page 198
+PAGE 198
 
 <Company Name> MONSANTO COMPANY
 <Division> MONSANTO PLASTICS AND POLYMERS COMPANY

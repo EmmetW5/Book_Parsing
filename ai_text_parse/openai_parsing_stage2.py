@@ -1,14 +1,10 @@
 import openpyxl
 import rapidfuzz
+import os
 #                                               IMPORTANT
 # This assumes that the data has been looked at by a human and that the formatting errors have been fixed (more or less)
 #                                               IMPORTANT
                                      
-
-# This is the edited output file from the previous stage
-input_file = "output_ai.txt"
-excel_file = "data.xlsx"
-
 # Debug mode - prints out lots of crud for debugging
 debug = False
 
@@ -77,11 +73,15 @@ class Company:
         print("\n\n")
 
 
-# Read from a file
-def read_from_file(file_name):
-    with open(file_name, 'r') as f:
-        return f.read()
-    
+# Opens file for reading and returns the contents as a string
+def open_file(file_path):
+    try:
+        with open(file_path, 'r') as file:
+            content = file.read()
+            return content
+    except FileNotFoundError:
+        print(f"The file {file_path} was not found.")
+        quit()
 
 
 # A more robust way to compare strings given OCR errors. Uses rapidfuzz to compare strings
@@ -96,7 +96,7 @@ def compare_str_fuzz(str1, str2):
 # Parse the text into companies and write them to an excel sheet
 # Keep track of: year, and what section it is in: olefin fiber, textile glass, or mixed.
 
-def parse_text(text):
+def parse_text_3(text):
     
     lines = text.split('\n')
     year = lines[0] # The year is the first line, added by a human (eventually we may want to automate this)
@@ -190,13 +190,119 @@ def parse_text(text):
 
     return companies
 
-# Main function
-text = read_from_file(input_file)
 
-companies = parse_text(text)
+
+# Parse the text into company objects, and return a list of company objects
+# This version of the function is designed to work with the 4o model, which actually follows the prompt rules for output
+def parse_text_4o(text):
+    # Split the text into lines, and grab the year from the first line
+    lines = text.split('\n')
+    year = lines[0] # The year is the first line, added by a human (eventually we may want to automate this)
+
+
+    # Create a list of companies to store the company objects
+    companies = []
+    current_company = None
+    is_olefin_fiber = False
+    is_textile_glass = False
+
+    # Not pythonic, but that's a load of nonsense
+    i = 1
+    while i < len(lines):
+
+        # check if the line delimits the olefin or textile glass sections
+        if(compare_str_fuzz("OLEFIN FIBER", remove_brackets(lines[i]))):
+            is_olefin_fiber = True
+            is_textile_glass = False
+        elif(compare_str_fuzz("TEXTILE GLASS FIBER", remove_brackets(lines[i]))):
+            is_olefin_fiber = False
+            is_textile_glass = True
+        
+        # <Company Name> : len = 14
+        elif(compare_str_fuzz("<Company Name>", lines[i][0:14])):
+            if current_company:
+                # Since companies in these sections --shouldn't-- have any listed fibers, we can add them here
+                if(is_olefin_fiber):
+                    current_company.add_fiber("Olefin")
+                elif(is_textile_glass):
+                    current_company.add_fiber("Textile Glass")
+                
+                # Add the built company to the list of companies if we find a new company name and the current company is not None
+                companies.append(current_company)
+
+            # Create a new company object, setting the year and name
+            current_company = Company(remove_brackets(lines[i]))
+            current_company.year = year
+
+        # <Executive Office> : len = 18
+        elif(compare_str_fuzz("<Executive Office>", lines[i][0:18])):
+            current_company.add_exec_office(remove_brackets(lines[i]))
+
+        # <Division> : len = 10  ***May change how this is handled later
+        elif(compare_str_fuzz("<Division>", lines[i][0:10])):
+            current_company.name += ", " + remove_brackets(lines[i])
+        
+        # <Regional Sales> : len = 15
+        elif(compare_str_fuzz("<Regional Sales>", lines[i][0:15])):
+            current_company.add_regional_sales_office(remove_brackets(lines[i]))
+
+        # <Sales Office> : len = 12
+        elif(compare_str_fuzz("<Sales Office>", lines[i][0:12])):
+            current_company.add_sales_office(remove_brackets(lines[i]))
+
+        # <Fiber> : len = 7
+        elif(compare_str_fuzz("<Fiber>", lines[i][0:7])):
+            current_company.add_fiber(remove_brackets(lines[i]))
+
+        # <Plant Location> : len = 15
+        elif(compare_str_fuzz("<Plant Location>", lines[i][0:15])):
+            current_company.add_plant_location(remove_brackets(lines[i]))
+
+        # <Additional Fibers> : len = 19
+        elif(compare_str_fuzz("<Additional Fibers>", lines[i][0:19])):
+            current_company.add_additional_fiber(remove_brackets(lines[i]))
+
+        # <Notes> : len = 7
+        elif(compare_str_fuzz("<Notes>", lines[i][0:7])):
+            current_company.add_notes(remove_brackets(lines[i]))
+        i += 1
+    return companies
+
+        
+
+
+# Returns all text after ">", removing any leading whitespace
+def remove_brackets(input):
+    split = input.split(">")
+    if len(split) < 2:
+        return ""
+    return input.split(">")[1].strip()
+
+# Main function
+
+# Currently hard coded for testing purposes - will be changed to the real excel file eventually
+excel_file = "data.xlsx"
+
+
+
+# Get the folder name and file name from the user
+folder_name = input("Enter the folder name for input: ")
+file_name = input("Enter the file name: ")
+file_path = os.path.join(folder_name, file_name)
+current_working_directory = os.getcwd()
+
+# Combine the current working directory with the constructed path to get an absolute path
+absolute_file_path_input = os.path.join(current_working_directory, file_path)
+
+# Open the file and read the contents into text
+text = open_file(absolute_file_path_input)
+
+companies = parse_text_4o(text)
 
 excel = openpyxl.load_workbook(excel_file)
 sheet = excel.active
+
+
 
 print("Writing to excel sheet")
 for company in companies:
