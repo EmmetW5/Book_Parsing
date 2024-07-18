@@ -1,4 +1,4 @@
-# Book-Parsing
+# Book Parsing
 RPI undergraduate research project with the Fashion Innovation Center. Using Python and OpenAI API, turn book scans into an excel sheet.
 
 Currently, the project uses the following workflow to create the excel sheet:
