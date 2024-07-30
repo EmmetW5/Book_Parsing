@@ -252,7 +252,10 @@ def parse_text_4o(text):
 
         # <Fiber> : len = 7
         elif(compare_str_fuzz("<Fiber>", lines[i][0:7])):
-            current_company.add_fiber(remove_brackets(lines[i]))
+            if(is_olefin_fiber or is_textile_glass):
+                current_company.add_additional_fiber(remove_brackets(lines[i]))
+            else:
+                current_company.add_fiber(remove_brackets(lines[i]))
 
         # <Plant Location> : len = 15
         elif(compare_str_fuzz("<Plant Location>", lines[i][0:15])):
