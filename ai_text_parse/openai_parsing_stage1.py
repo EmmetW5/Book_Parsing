@@ -44,7 +44,7 @@ my_prompt = f"""
         <Additional Fibers> regular & hydrolysis-resistant
     """
 
-cur_model = "gpt-4o"
+cur_model = "gpt-4o-mini"
 
 def openai_parse(text):
     
