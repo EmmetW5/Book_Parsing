@@ -16,7 +16,7 @@ U.S. MAN-MADE FIBER PRODUCERS
 <Division> CHEMICAL SECTOR  
 <Division> FIBERS DIVISION  
 <Executive Office> 141 1 Broadway, New York, NY 10018  
-<Regional Sales> 400 N. Tustin Ave., Santa Ana, CA 92705  
+<Regional Sales> 400 N. Tustin Ave. , Santa Ana, CA 92705  
 <Regional Sales> 1775 The Exchange, Suite 160, Atlanta, GA 30339  
 <Regional Sales> 2100 Fiber Park Dr., Dalton, GA 30720  
 <Regional Sales> Friendship Center Office Park, Suite 108, Greensboro, NC 27409  
@@ -39,7 +39,9 @@ U.S. MAN-MADE FIBER PRODUCERS
 <Additional Fibers> Absorbit, Enkaire, Enkrome, Fiber 700, IT (staple)  
 <Fiber> Nylon 6  
 <Plant Location> Enka, NC  
-<Additional Fibers> Central, SC & Lowland, TN Anti-Cling Crepeset, Crepeset, Enka/on, Enkalure, Enkasheer, Lure/on, So/talon, TE.N (yarn & staple)  
+<Plant Location> Central, SC  
+<Plant Location> Lowland, TN  
+<Additional Fibers> Anti-Cling, Crepeset, Crepeset, Enka/on, Enkalure, Enkasheer, Lure/on, So/talon, TE.N (yarn & staple)  
 <Fiber> Polyester  
 <Plant Location> Lowland, TN  
 <Additional Fibers> Crepesoft, Encron, Encron 8, Golden Glow, Golden Touch, Matte Touch, Plyloc, Polyextra, Shanton, Silky Touch, Ultra-Touch (yarn & staple)  
@@ -110,12 +112,13 @@ U.S. MAN-MADE FIBER PRODUCERS
 <Executive Office> Highways 9 & 71, Spirit Lake, IA 51360
 <Fiber> Nylon 6
 <Plant Location> Spirit uike, IA
+<Additional Fibers> (monofil)
 
 <Company Name> CAMAC CORPORATION  
 <Executive Office> P.O. Box 1004, Bristol, VA 24203  
 <Fiber> Nylon 6  
 <Plant Location> Bristol, VA  
-<Additional Fibers> Camalon (yarn)
+<Additional Fibers> Camalon (yarn)  
 
 <Company Name> CELANESE CORPORATION  
 <Division> CELANESE FIBERS OPERATIONS  
@@ -129,13 +132,13 @@ U.S. MAN-MADE FIBER PRODUCERS
 <Additional Fibers> yarn, staple & tow  
 <Fiber> Triacetate  
 <Plant Location> Rock Hill  
-<Additional Fibers> yarn, staple & tow  
+<Additional Fibers> Arne/ (yarn, staple & tow)  
 
 <Company Name> CORTLAND LINE COMPANY  
 <Executive Office> 67 E. Court St., P.O. Box 1362, Cortland, NY 13045  
 <Fiber> Nylon 6  
 <Plant Location> Cortland, NY  
-<Additional Fibers> monofil - captive  
+<Additional Fibers> monofil - captive
 
 <Company Name> COURTAULDS NORTH AMERICA INC.
 <Executive Office> 104 West 40th St., New York, NY 10018
@@ -144,8 +147,8 @@ U.S. MAN-MADE FIBER PRODUCERS
 <Plant Location> Le Moyne, Mobile County, AL
 <Additional Fibers> Coloray, Fibro (staple)
 <Fiber> Nylon 6
-<Plant Location> Le Moyne Courtaulds
-<Additional Fibers> Shareen, (yam & monofil)
+<Plant Location> Le Moyne
+<Additional Fibers> Courtaulds, Shareen, (yam & monofil)
 
 <Company Name> E. I. DU PONT DE NEMOURS & COMPANY (INC.)
 <Division> TEXTILE FIBERS DEPARTMENT
@@ -211,7 +214,7 @@ U.S. MAN-MADE FIBER PRODUCERS
 <Executive Office> P.O. Box 1278, Gastonia, NC 28052  
 <Fiber> Polyester  
 <Plant Location> Hopewell, VA  
-<Additional Fibers> yarn  
+<Additional Fibers> yarn
 
 <Company Name> GLOBE MANUFACTURING CO.
 <Executive Office> 456 Bedford St., Fall River, MA 02720
@@ -241,8 +244,8 @@ U.S. MAN-MADE FIBER PRODUCERS
 <Regional Sales> 1450 Broadway, ew York, NY 10018  
 <Regional Sales> 2120 Pinecroft Road, Greensboro, NC 27407  
 <Fiber> Nylon 6  
-<Plant Location> Yanceyville, C Hanover  
-<Additional Fibers> yam & monofil  
+<Plant Location> Yanceyville, C  
+<Additional Fibers> Hanover (yam & monofil)  
 
 <Company Name> JOHNSON FILAMENTS, INC.
 <Executive Office> Industrial Ave., Williston, Yr 95495
@@ -304,29 +307,30 @@ U.S. MAN-MADE FIBER PRODUCERS
 <Sales Office> 183 Madison Ave., New York, NY 10017
 <Fiber> Polyester
 <Plant Location> Asheboro, NC
+<Additional Fibers> yam
 
-<Company Name> SHAKESPEARE COMPANY  
-<Division> MONOFILAMENT DIVISION  
-<Sales Office> 1801 Main St., P.O. Box 246, Columbia, SC 29202  
-<Fiber> Nylon 6/66  
-<Plant Location> Columbia, SC  
-<Additional Fibers> Soojlex, Superflex, s-3, Wonderthread  
-<Fiber> Polyester  
-<Plant Location> Columbia  
-<Additional Fibers> Shakespeare Wonderthread  
+<Company Name> SHAKESPEARE COMPANY
+<Division> MONOFILAMENT DIVISION
+<Sales Office> 1801 Main St., P.O. Box 246, Columbia, SC 29202
+<Fiber> Nylon 6/66
+<Plant Location> Columbia, SC
+<Additional Fibers> Soojlex, Superflex, s-3, Wonderthread
+<Fiber> Polyester
+<Plant Location> Columbia
+<Additional Fibers> Shakespeare Wonderthread
 
-<Company Name> STAR FIBERS, INC.
-<Executive Office> 136 Fuller Rd., Albany, NY 12205
-<Regional Sales> Edgefield, SC 29824
-<Fiber> Nylon 6
-<Plant Location> Edgefield, SC
-<Additional Fibers> Starbrite (staple)
+<Company Name> STAR FIBERS, INC.  
+<Executive Office> 136 Fuller Rd., Albany, NY 12205  
+<Regional Sales> Edgefield, SC 29824  
+<Fiber> Nylon 6  
+<Plant Location> Edgefield, SC  
+<Additional Fibers> Starbrite (staple)  
 
 <Company Name> TOLARAM FIBERS, INC.  
 <Executive Office> 4 Park Avenue, New York, NY  
 <Fiber> Polyester  
 <Plant Location> Ansonville, C  
-<Additional Fibers> yarn  
+<Additional Fibers> yarn
 
 <Company Name> UNIVERSAL POLYMER PRODUCTS CORPORATION  
 <Executive Office> see Hanover Mills.  
@@ -352,14 +356,14 @@ U.S. MAN-MADE FIBER PRODUCERS
 
 OLEFIN FIBER
 
-<Company Name> ACS INDUSTRIES, INC.  
-<Executive Office> 71 Villanova St., Woonsocket, Rl 02895  
-<Plant Location> Woonsocket, Rl  
-<Additional Fibers> P yam & staple  
+<Company Name> ACS INDUSTRIES, INC.
+<Executive Office> 71 Villanova St., Woonsocket, Rl 02895
+<Plant Location> Woonsocket, Rl
+<Additional Fibers> P yam & staple
 
 <Company Name> ALBANY INTERNATIONAL  
 <Executive Office> see listing on page 163  
-<Plant Location> Homer, NY
+<Plant Location> Homer, NY  
 
 <Company Name> AMERICAN MANUFACTURING COMPANY  
 <Executive Office> 206 Willow Ave., Honesdale, PA 18431  
@@ -380,7 +384,7 @@ OLEFIN FIBER
 <Additional Fibers> E & P monofil & film  
 <Division> LAFAYETTE ROPE DIVISION  
 <Plant Location> Lafayette, LA  
-<Additional Fibers> Amco, American, Bondtie, Floterope (E & P monofil)  
+<Additional Fibers> Amco, American, Bondtie, Floterope (E & P monofil)
 
 <Company Name> AMETEK INC.
 <Division> SPECIAL FILAMENTS DIVISION
@@ -395,17 +399,20 @@ OLEFIN FIBER
 <Regional Sales> P.O. Box 911, Dalton, GA 30720  
 <Regional Sales> P.O. Box 3545, 604 Sheridan Avenue, Dalton, GA 30720  
 <Regional Sales> 700 West 1st Street, Lowell, NC 28098  
-<Fiber> P yam  
 <Plant Location> Andalusia & Roanoke, AL  
 <Plant Location> Bainbridge, Hazlehurst & Nashville, GA  
 <Plant Location> Lowell, NC  
 <Plant Location> Afton, VA  
-<Additional Fibers> Need/ Bae, Poly Bae & Poly Bae FL Wprimary carpet backing; Action Bae secondary carpet backing; Propexindustrial goods; Marquf!N sa Lana, Pat/on & Pat/on Plus yarn  
+<Additional Fibers> P yam, monofil, film & staple  
+<Additional Fibers> Need/ Bae, Poly Bae & Poly Bae FL Wprimary carpet backing  
+<Additional Fibers> Action Bae secondary carpet backing  
+<Additional Fibers> Propexindustrial goods  
+<Additional Fibers> Marquf!N sa Lana, Pat/on & Pat/on Plus yarn  
 
 <Company Name> ARLIN MFG. CO., INC.  
 <Executive Office> 239 Industrial Ave., Lowell, MA 01853  
 <Plant Location> Lowell, MA  
-<Additional Fibers> P film  
+<Additional Fibers> P film
 
 <Company Name> ARMSTRONG WORLD INDUSTRIES, INC.
 <Executive Office> Lancaster, PA 17604
@@ -418,10 +425,10 @@ OLEFIN FIBER
 <Regional Sales> 90 Park Ave., New York, NY 10016
 <Plant Location> St. Louis, MO
 
-<Company Name> BERKLEY & CO. INC.
-<Executive Office> see listing on page 164
-<Plant Location> Spirit Lake, IA
-<Additional Fibers> E & P monofil - captive
+<Company Name> BERKLEY & CO. INC.  
+<Executive Office> see listing on page 164  
+<Plant Location> Spirit Lake, IA  
+<Additional Fibers> E & P monofil - captive  
 
 <Company Name> BLUE MOUNTAIN EXTRUSIONS  
 <Executive Office> P.O. Box 100, Anniston, AL 36202  
@@ -450,7 +457,7 @@ OLEFIN FIBER
 <Plant Location> New Orleans, IA  
 
 <Company Name> THE COLUMBIAN GROUP  
-<Division> DIVISION OF fflE COLUMBIAN ROPE COMPANY  
+<Division> DIVISION OF FfLE COLUMBIAN ROPE COMPANY  
 <Executive Office> 1 Columbian Drive, Auburn, NY 13021  
 <Regional Sales> 90 Charter Oak Ave., San Francisco, CA 94124  
 <Regional Sales> 600 St. George Ave., Jefferson, IA 70181  
@@ -467,9 +474,9 @@ OLEFIN FIBER
 <Plant Location> Jefferson, IA & Auburn, NY  
 <Additional Fibers> E & P monofil & film  
 
-<Company Name> CONCORDE FIBERS, INC.  
-<Executive Office> P.O. Box 200, Highway 45, Jamest0wn, SC 29453  
-<Plant Location> Jamestown, SC  
+<Company Name> CONCORDE FIBERS, INC.
+<Executive Office> P.O. Box 200, Highway 45, Jamest0wn, SC 29453
+<Plant Location> Jamestown, SC
 <Additional Fibers> P yam
 
 <Company Name> CROWE ROPE COMPANY  
@@ -509,15 +516,15 @@ OLEFIN FIBER
 <Division> INDUSTRIAL TEXTILES DIVISION
 <Executive Office> Hwy. 78 West, Summerville, SC 29483
 <Sales Office> 380 Interstate North, Suite 375, Atlanta, GA 30339
-<Fiber> P
 <Plant Location> Kingman, KS
-<Additional Fibers> monofil & film cordage
+<Additional Fibers> P monofil & film cordage
 <Plant Location> Summerville, SC
-<Additional Fibers> monofil & film fabrics
+<Additional Fibers> P monofil & film fabrics
+<Notes> The company also weaves Ba.xon & Fuzzbak carpet backing and packaging fabrics at Summerville, SC.
 
-<Company Name> FNT INDUSTRIES, INC.  
-<Executive Office> 927 First Street, Menominee, Ml 49858  
-<Plant Location> Menominee, MI  
+<Company Name> FNT INDUSTRIES, INC.
+<Executive Office> 927 First Street, Menominee, Ml 49858
+<Plant Location> Menominee, MI
 <Additional Fibers> E monofil
 
 <Company Name> FIBERS & FABRICS OF GEORGIA, INC.
@@ -551,8 +558,9 @@ OLEFIN FIBER
 
 <Company Name> GEORGIA SYNTHETICS, INC.
 <Executive Office> P.O. Box 962, Elberton, GA 30635
+<Fiber> E & P yam
 <Plant Location> Elberton, GA
-<Additional Fibers> E & P yam, monofil & multifil
+<Additional Fibers> monofil & multifil
 
 <Company Name> GLADDING CORP.
 <Division> CORDAGE DIVISION
@@ -577,7 +585,7 @@ OLEFIN FIBER
 <Division> TUBBS CORDAGE COMPANY  
 <Executive Office> see listing under Tubbs Cordage.  
 <Plant Location> Austin, TX  
-<Additional Fibers> P monofil & film
+<Additional Fibers> P monofil & film  
 
 <Company Name> KELLER INDUSTRIES, INC.
 <Executive Office> 18000 State Rd. #9, North Miami, FL 33162
@@ -634,21 +642,19 @@ OLEFIN FIBER
 <Company Name> PHILLIPS FIBERS CORPORATION  
 <Executive Office> P.O. Box 66, Interstate 85, Greenville, SC 29602  
 <Regional Sales> 630 Fifth Ave., ew York, NY 10020  
-<Plant Location> Rocky Mount, NC  
-<Plant Location> Spartanburg, SC  
+<Plant Location> Rocky Mount, NC & Spartanburg, SC  
 <Fiber> J\Ja1vess  
-<Plant Location> Seneca, SC  
-<Additional Fibers> Duon, Petromat, Ru/on, Supac
+<Additional Fibers> P yarn, staple & tow  
+<Notes> The company also manufactures Duon, Petromat, Ru/on and Supac nonwoven fabrics at Seneca, SC.
 
 <Company Name> POLYLOOM CORP OF AMERICA  
 <Executive Office> 1615 N. Broadway, P.O. Box 289, Dayton, TN 37321  
-<Plant Location> Dayton, TN  
 <Fiber> Polyloom  
-<Additional Fibers> P split film
+<Plant Location> Dayton, TN  
 
-<Company Name> SARLON INDUSTRIES, INC.
-<Executive Office> 775 N.W. 71st Street, Miami, FL 33150
-<Plant Location> Miami, FL
+<Company Name> SARLON INDUSTRIES, INC.  
+<Executive Office> 775 N.W. 71st Street, Miami, FL 33150  
+<Plant Location> Miami, FL  
 <Additional Fibers> P monofil & film
 
 <Company Name> SHUFORD MILLS, INC.
@@ -658,9 +664,14 @@ OLEFIN FIBER
 
 <Company Name> SUNSHINE CORDAGE CORPORATION  
 <Executive Office> 7250 N.W. 41st St., Miami, FL 33166  
-<Fiber> Ca/a-Line  
 <Plant Location> Miami, FL  
-<Additional Fibers> 0/etex, Poncar, Sunshine, Sunylon, S,.mypool (E & P monofil)
+<Fiber> Ca/a-Line  
+<Fiber> 0/etex  
+<Fiber> Poncar  
+<Fiber> Sunshine  
+<Fiber> Sunylon  
+<Fiber> S,.mypool  
+<Additional Fibers> E & P monofil
 
 <Company Name> SYNTHETIC INDUSTRIES  
 <Executive Office> 309 Lafayette Rd., Chickamauga, GA 30707  
@@ -677,7 +688,7 @@ OLEFIN FIBER
 <Executive Office> 660 Bryant St., P.O. Box 7986, San Francisco, CA 94 120
 <Regional Sales> P.O. Box 709, Orange, CA 92666
 <Regional Sales> 2045 No. 15th Ave., Melrose Park, IL 60160
-<Regional Sales> 5501 Jefferson Highway, Harahan, Jefferson Parish, LA 70123
+<Regional Sales> 5501 Jefferson Highway, Harahan.Jefferson Parish, LA 70123
 <Regional Sales> 1355 West Front St., Plainfield, NJ 07063
 <Regional Sales> 1311 Palmer St., Houston, TX 77003
 <Regional Sales> 415 South Fidalgo St., Seattle, WA 98108
@@ -685,7 +696,7 @@ OLEFIN FIBER
 <Additional Fibers> Loktite (P monofil & film)
 
 <Company Name> TWINE PRODUCTS CORPORATION
-<Executive Office> 201 Dufossat, P.O. Box 15285, New Orleans, LA 70175
+<Executive Office> 201 Dufossat, P.O. Box 15285, New Orleans, I.A 70175
 <Plant Location> New Orleans, LA
 <Additional Fibers> (P film)
 
@@ -754,9 +765,9 @@ TEXTILE GLASS FIBER
 
 <Company Name> LUNDY TECHNICAL CENTER  
 <Executive Office> Pompano Beach, FL 33064  
-<Plant Location> Pompano Beach, FL  
 <Fiber> RoMHOglas  
-<Additional Fibers> metallized glass fiber roving & strand and nonwoven metallized glass mat  
+<Plant Location> Pompano Beach, FL  
+<Additional Fibers> metallized glass fiber roving & strand and nonwoven metallized glass mat
 
 <Company Name> MANVILLE CORPORATION  
 <Division> FILTRATION & MINERALS DMSION  
@@ -764,7 +775,7 @@ TEXTILE GLASS FIBER
 <Regional Sales> 7500 Dutch Rd., Waterville, OH 43566  
 <Fiber> Chop-Pak  
 <Plant Location> Waterville, OH  
-<Additional Fibers> Etowah, TN  
+<Plant Location> Etowah, TN  
 <Additional Fibers> mat, chopped strand and staple yarn & sliver  
 
 <Company Name> NICOFIBERS INC.
@@ -775,11 +786,11 @@ TEXTILE GLASS FIBER
 <Company Name> PPG INDUSTRIES, INC.
 <Executive Office> One PPG Place, Pittsburgh, PA 15272
 <Regional Sales> 1700 E. Dyer Rd., Suite 200, Santa Ana, CA 92705
-<Regional Sales> 880 Johnson Ferry Rd., E., Suite 220, Atlanta, GA 30342
+<Regional Sales> 880 Johnson Ferry Rd., .E., Suite 220, Atlanta, GA 30342
 <Regional Sales> 4015 Executive Park Dr., Suite 100, Cincinnati, OH 45241
-<Sales Office> 2155 West Big Beaver Rd., P.O. Box 3510, Troy, MI 48084
+<Sales Office> 2155 West Big Beaver Rd., P.O. Box 3510, Troy, Ml 48084
 <Regional Sales> 30 Tower Lane, Avon Park South, Avon, CT 06001
-<Regional Sales> 1601 East Garrison Blvd., Suite 210, Gastonia, NC 28052
+<Regional Sales> 1601 East Garrison Blvd., Suite 210, Gastonia, C 28052
 <Regional Sales> 322 Park Ave., Scotch Plains, NJ 07076
 <Fiber> Azdel
 <Plant Location> Lexington & Shelby
@@ -818,7 +829,7 @@ TEXTILE GLASS FIBER
 <Plant Location> Aiken & Anderson, SC  
 <Plant Location> Jackson, TN  
 <Plant Location> Amarillo, TX  
-<Additional Fibers> Araton, Beta, Bi-Ply, 5-Glass, 5-2 Glass (yarn, roving, woven roving, mat, chopped & milled)
+<Additional Fibers> Araton, Beta, Bi-Ply, 5-Glass, 5-2 Glass (yarn, roving, woven roving, mat, chopped & milled)  
 
 <Company Name> REICHHOLD CHEMICALS, INC.  
 <Executive Office> 525 N. Broadway, White Plains, NY 10603  
@@ -834,5 +845,5 @@ TEXTILE GLASS FIBER
 <Plant Location> 6230 Irwindale Ave., Box 2148, Irwindale, CA 91706  
 <Additional Fibers> Chemglas (roving, chopped & milled)  
 <Plant Location> Fiber Glass Road, Nashville, TN 37210  
-<Additional Fibers> (roving, woven roving, mat, chopped & milled)  
+<Additional Fibers> roving, woven roving, mat, chopped & milled  
 

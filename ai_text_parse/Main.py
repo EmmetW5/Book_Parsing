@@ -79,6 +79,6 @@ input_folder = "text_files"
 model_output_folder = "model_output"
 output_excel = "data.xlsx"
 
-#process_input_folder(input_folder)
+process_input_folder(input_folder)
 write_output_to_excel(model_output_folder, output_excel)
             
