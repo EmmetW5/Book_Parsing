@@ -170,6 +170,13 @@ class ExcelParser:
             # <Notes> : len = 7
             elif(self.compare_str_fuzz("<Notes>", lines[i][0:7])):
                 current_company.add_notes(self.remove_brackets(lines[i]))
+
+            else:
+                # If we don't recognize the line, write the line to the error.txt file
+                # Company name: error
+                with open('error.txt', 'a') as file:
+                    file.write(f"Company name: {current_company.name}\n")
+                    file.write(f"Error: {lines[i]}\n\n")
             i += 1
         return companies
 
