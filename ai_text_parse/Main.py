@@ -54,6 +54,10 @@ def process_input_folder(folder_name):
         if input_file.endswith(".txt"):
             file_path = os.path.join(folder_name, input_file)
 
+            # skip a file if it has "unfinished" in the name
+            if "unfinished" in file_path:
+                continue
+
             # Process the text file
             output = parserAI.process_text(file_path)
     
@@ -68,7 +72,7 @@ def write_output_to_excel(input_folder, excel_sheet_name):
             file_path = os.path.join(input_folder, input_file)
 
             # Process the text file
-            output = parserExcel.text_to_excel(file_path, excel_sheet_name)
+            parserExcel.text_to_excel(file_path, excel_sheet_name)
             bar.next()
     bar.finish()
 
