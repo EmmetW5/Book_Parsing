@@ -60,6 +60,26 @@ def process_input_folder(folder_name):
 
             # Process the text file
             output = parserAI.process_text(file_path)
+
+
+# Process all files in the input folder that have not been processed yet
+def process_input_folder_unprocessed(folder_name):
+    parserAI = AIParser("gpt-4o-mini", my_prompt)
+
+    # Loop through each file in the folder, checking if it has a corresponding file in the model_output folder
+    for input_file in os.listdir(folder_name):
+        if input_file.endswith(".txt"):
+            file_path = os.path.join(folder_name, input_file)
+            output_file = os.path.join("model_output", input_file.replace(".txt", "_gpt-4o-mini.txt"))
+
+            # skip a file if it has "unfinished" in the name
+            if "unfinished" in file_path:
+                continue
+
+            # Process the text file if it has not been processed yet
+            if not os.path.exists(output_file):
+                output = parserAI.process_text(file_path)
+
     
 def write_output_to_excel(input_folder, excel_sheet_name):
     parserExcel = ExcelParser()
@@ -83,6 +103,19 @@ input_folder = "text_files"
 model_output_folder = "model_output"
 output_excel = "data.xlsx"
 
-#process_input_folder(input_folder)
-write_output_to_excel(model_output_folder, output_excel)
+# Process the input folder, writing the output to the model_output folder
+
+# --- Two options for processing the input folder: ---
+
+# 1. Process all files in the input folder
+# process_input_folder(input_folder)
+
+# 2. Process only files that have not been processed yet
+    # No new files, this should not do anything
+
+process_input_folder_unprocessed(input_folder)
+
+
+# Write the output to an Excel sheet
+#write_output_to_excel(model_output_folder, output_excel)
             
