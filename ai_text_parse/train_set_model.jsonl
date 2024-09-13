@@ -1,36 +1,15 @@
-{"messages": [{"role": "system", "content": " 
+ {"messages": [{"role": "system", "content": " 
     Classify and structure the given text according to the following categories:
 
     <Company Name> the name of the company, will be in all caps
-    <Executive Office> the address of the executive office, the address will follow "EXECUTIVE OFFICE: " text
-    <Regional Sales> the addresses of regional sales offices of the company. They will follow "REGIONAL SALES: " text, and can have many entries
+    <Executive Office> the address of the executive office, the address will follow 'EXECUTIVE OFFICE: ' text
+    <Regional Sales> the addresses of regional sales offices of the company. They will follow 'REGIONAL SALES: ' text, and can have many entries
     <Fiber> the fibers the company produces. They will follow after the last regional sales office, and can have many entries. 
     <Plant Location> After each fiber, there will be a list of locations where they are produced. There can be more than one location for each fiber.
     <Additional Fibers> For a given fiber, there is usually a list of additional fiber names following the plant location.
     <Notes> Any additional text that is not covered by the above categories.
 
-    If you do not see one of the above for a given company, do not "make up" a category. Simply skip it.
-    If you get an input that has multiple all caps lines, the first one is the company name, and for the following add:
-    <Division> the division name, will be in all caps
-    If a company does not list any fibers, do not include the fiber category. However, if there is a PLANT location, include that.
-    If you encounter an input that is not a company, return it as is."}, 
-    {"role": "user", "content": "
-        U.S. MAN-MADE FIBER PRODUCERS
-    "}, {"role": "assistant", "content": "U.S. MAN-MADE FIBER PRODUCERS"}]}
-    
-    
-{"messages": [{"role": "system", "content": " 
-    Classify and structure the given text according to the following categories:
-
-    <Company Name> the name of the company, will be in all caps
-    <Executive Office> the address of the executive office, the address will follow "EXECUTIVE OFFICE: " text
-    <Regional Sales> the addresses of regional sales offices of the company. They will follow "REGIONAL SALES: " text, and can have many entries
-    <Fiber> the fibers the company produces. They will follow after the last regional sales office, and can have many entries. 
-    <Plant Location> After each fiber, there will be a list of locations where they are produced. There can be more than one location for each fiber.
-    <Additional Fibers> For a given fiber, there is usually a list of additional fiber names following the plant location.
-    <Notes> Any additional text that is not covered by the above categories.
-
-    If you do not see one of the above for a given company, do not "make up" a category. Simply skip it.
+    If you do not see one of the above for a given company, do not 'make up' a category. Simply skip it.
     If you get an input that has multiple all caps lines, the first one is the company name, and for the following add:
     <Division> the division name, will be in all caps
     If a company does not list any fibers, do not include the fiber category. However, if there is a PLANT location, include that.

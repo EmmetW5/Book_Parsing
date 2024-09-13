@@ -50,8 +50,8 @@ class Company:
         list_additional_fibers = '; '.join(self.additional_fibers)
         
         # Write to the excel sheet
-        sheet.append([self.year, self.name, list_fibers, None, list_additional_fibers, self.exec_office, list_plant_locations, 
-                      None, list_sales_office, list_regional_sales_offices, None, None, None, self.notes, None])
+        sheet.append([self.year, self.name, list_fibers, list_additional_fibers, None, self.exec_office, list_plant_locations, 
+                    list_sales_office, list_regional_sales_offices, None, None, None, self.notes, None])
         
 
     # Print the company object

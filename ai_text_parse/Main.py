@@ -117,5 +117,5 @@ process_input_folder_unprocessed(input_folder)
 
 
 # Write the output to an Excel sheet
-#write_output_to_excel(model_output_folder, output_excel)
+write_output_to_excel(model_output_folder, output_excel)
             
