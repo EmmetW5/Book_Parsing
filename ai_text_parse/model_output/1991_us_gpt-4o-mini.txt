@@ -823,9 +823,7 @@ OLEFIN FIBER
 <Plant Location> Leesville & Summerville, SC
 <Additional Fibers> P yarn & monofil
 
-GLASS FIBER is not a company name, so I will return it as is. 
-
-GLASS FIBER
+TEXTILE GLASS FIBER
 
 <Company Name> FIBER GLASS INDUSTRIES, INC.
 <Executive Office> RD 5, Edson Street, Amsterdam, NY

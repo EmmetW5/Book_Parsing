@@ -835,7 +835,7 @@ OLEFIN FIBER
 <Plant Location> Leesville & Summerville, SC
 <Additional Fibers> P yam & monofil
 
-GLASS FIBER is not a company name.
+TEXTILE GLASS FIBER
 
 <Company Name> CERTAINTEED CORPORATION  
 <Division> FIBER GLASS REINFORCEMENTS DIVISION  

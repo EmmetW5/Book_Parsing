@@ -554,7 +554,7 @@ DICEY
 <Company Name> ENSIGN-BICKFORD INDUSTRIES, INC.
 <Executive Office> 630 Hopmeadow Street, Simsbury, CT 06070
 <Plant Location> Simsbury, CT
-<Additional Fibers> E-8 Mesh®, chopped fibers for concrete (P film)
+<Additional Fibers> E-8 Meshï¿½, chopped fibers for concrete (P film)
 
 <Company Name> EXTRUDED FIBERS  
 <Executive Office> 112 West Westcott, Dalton, GA 30721  
@@ -852,7 +852,7 @@ DICEY
 <Plant Location> Leesville & Summ_erville, SC
 <Additional Fibers> P yam & monofil
 
-GLASS FIBER is not a company name, so I will return it as is.
+TEXTILE GLASS FIBER
 
 <Company Name> CERTAINTEED CORPORATION  
 <Division> FIBER GLASS REINFORCEMENTS DIVISION  
