@@ -180,7 +180,7 @@ class ExcelParser:
             i += 1
         return companies
 
-    def text_to_excel(self, input_file, excel_file):
+    def text_to_excel_us(self, input_file, excel_file):
         companies = self.parse_text_4o(input_file)
         excel = openpyxl.load_workbook(excel_file)
         sheet = excel.active
