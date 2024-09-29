@@ -99,7 +99,7 @@ def write_output_to_excel(input_folder, excel_sheet_name):
     print(f"Text conversion to excel sheet complete - check {excel_sheet_name} for the results")
 
 
-input_folder = "text_files"
+input_folder = "text_files_us"
 model_output_folder = "model_output"
 output_excel = "data.xlsx"
 
